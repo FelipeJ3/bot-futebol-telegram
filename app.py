@@ -12,7 +12,8 @@ TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
 # Ligas monitoradas
-TARGET_LEAGUES = [39, 140, 78, 135, 61, 88, 103, 207]
+# IDs mantidos: 88 (Eredivisie), 78 (Bundesliga), 103 (Eliteserien), 207 (Superliga Suíça)
+TARGET_LEAGUES = [88, 78, 103, 207]
 alerted_matches = set()
 
 def send_telegram(message):
